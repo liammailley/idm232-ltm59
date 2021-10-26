@@ -52,16 +52,20 @@ body {
 h2.hero_text {
      color: #FF7F51;
      font-size: 3rem;
+     margin: 2rem 0 1rem 0;
 }
 
+/*
 hr.hero_break {
-     color: #FF7F51;
+     background: #FF7F51;
 }
+*/
 
 .hero_search_container{
      display: flex;
      justify-content: center;
      width: 30%;
+     margin: 0 0 2rem 0;
 }
 
 .hero_search {
@@ -110,6 +114,9 @@ hr.hero_break {
      display: flex;
      flex-direction: column;
      width: 20%;
+     background: #71AD9B;
+     border: 4px solid #FCFFE4;
+     margin: 1rem;
 }
 
 .mainbody_column2 {
