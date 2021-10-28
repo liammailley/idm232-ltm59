@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1150px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 1250px */
+
 /*  ------------------- FONTS -------------------  */
 
 h1 {
@@ -25,13 +27,14 @@ p {
 
 header {
      display: flex;
-     position: sticky;
+     flex-direction: row;
      width: 100%;
      justify-content: space-between;
      background-color: #71AD9B;
 }
 .mainmenu {
      display: flex;
+     flex-direction: row;
      align-items: center;
      justify-content: flex-end;
      margin: 0 1rem 0 0;
@@ -55,6 +58,7 @@ header {
 
 body {
      width: 100%;
+     margin: 0;
 }
 
 /*  ------------------- HERO STYLING -------------------  */
@@ -70,6 +74,7 @@ h2.hero_text {
      color: #FF7F51;
      font-size: 3rem;
      margin: 2rem 0 1rem 0;
+     text-align: center;
 }
 
 /*
@@ -406,6 +411,7 @@ h3.recipeitem_header {
 
 .searchresults_top {
      display: flex;
+     flex-direction: row;
      justify-content: space-between;
      width: 100%;
 }
@@ -431,6 +437,7 @@ h2.searchresults_header{
 
 .searchresults_row {
      display: flex;
+     flex-direction: row;
 }
 
 /*  ------------------- INDIVIDUAL RECIPE PAGE STYLING -------------------  */
@@ -458,7 +465,7 @@ h2.searchresults_header{
 h1.individual_header {
      color: black;
      font-size: 3.5rem;
-     margin: 1rem 0
+     margin: 1rem 0;
 }
 
 .individual_img {
@@ -599,4 +606,6 @@ h1.admin {
 .save_button:active {
 	position:relative;
 	top:1px;
+}
+
 }

@@ -1,3 +1,5 @@
+@media only screen and (max-width: 1150px) { /* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 1250px */
+
 /*  ------------------- FONTS -------------------  */
 
 h1 {
@@ -5,7 +7,8 @@ h1 {
      font-weight: normal;
      color: #F3FF99;
      font-size: 4.5rem;
-     margin: 0.5rem 1rem 0.5rem 2rem;
+     margin: 0.5rem 1rem 0.5rem 1rem;
+     text-align: center;
 }
 h2 {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
@@ -25,13 +28,14 @@ p {
 
 header {
      display: flex;
-     position: sticky;
+     flex-direction: column;
      width: 100%;
      justify-content: space-between;
      background-color: #71AD9B;
 }
 .mainmenu {
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: flex-end;
      margin: 0 1rem 0 0;
@@ -55,6 +59,7 @@ header {
 
 body {
      width: 100%;
+     margin: 0;
 }
 
 /*  ------------------- HERO STYLING -------------------  */
@@ -70,6 +75,7 @@ h2.hero_text {
      color: #FF7F51;
      font-size: 3rem;
      margin: 2rem 0 1rem 0;
+     text-align: center;
 }
 
 /*
@@ -81,7 +87,7 @@ hr.hero_break {
 .hero_search_container{
      display: flex;
      justify-content: center;
-     width: 30%;
+     width: 50%;
      margin: 0 0 2rem 0;
 }
 
@@ -124,7 +130,7 @@ hr.hero_break {
 
 .mainbody {
      display: flex;
-     flex-direction: row;
+     flex-direction: column-reverse;
      justify-content: space-between;
      width: 100%;
      background: #71AD9B;
@@ -140,7 +146,7 @@ h2.mainbody_header {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      text-decoration: none;
      text-align: center;
-     width: 40%;
+     width: 90%;
 	background-color:#ff7f51;
 	border-radius:28px;
 	cursor:pointer;
@@ -191,10 +197,10 @@ h2.mainbody_header {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 20%;
+     width: 90%;
      background: #71AD9B;
      border: 4px solid #FCFFE4;
-     margin: 1rem;
+     margin: 1rem auto;
 }
 
 .mainbody_column1_box {
@@ -214,8 +220,8 @@ h3.mainbody_column1_header {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 30%;
-     margin: 1rem;
+     width: 90%;
+     margin: 1rem auto;
 }
 
 .mainbody_column2_box {
@@ -239,14 +245,14 @@ h3.mainbody_column2_header {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 50%;
-     margin: 1rem;
+     width: 90%;
+     margin: 1rem auto;
 }
 
 .mainbody_column3_box {
      display: flex;
-     flex-direction: row;
-     width: 30rem;
+     flex-direction: column;
+     width: auto;
      border: 1px solid #000000;
      background: #FCFFE4;
      margin: 1rem;
@@ -355,7 +361,7 @@ h2.login_subheader2 {
 .recipeitem {
      display: flex;
      flex-direction: column;
-     width: 15%;
+     width: auto;
      border: 1px solid #000000;
      background: #FCFFE4;
      margin: 1rem;
@@ -375,7 +381,7 @@ h3.recipeitem_header {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      text-decoration: none;
      text-align: center;
-     width: 40%;
+     width: auto;
 	background-color:#ff7f51;
 	border-radius:28px;
 	cursor:pointer;
@@ -406,6 +412,7 @@ h3.recipeitem_header {
 
 .searchresults_top {
      display: flex;
+     flex-direction: column;
      justify-content: space-between;
      width: 100%;
 }
@@ -425,19 +432,21 @@ h2.searchresults_header{
 .searchresults_search {
      display: flex;
      align-items: center;
-     width: 30%;
+     width: auto;
      display: flex;
 }
 
 .searchresults_row {
      display: flex;
+     flex-direction: column;
 }
 
 /*  ------------------- INDIVIDUAL RECIPE PAGE STYLING -------------------  */
 
 .individual {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
+     align-items: center;
      background: #F8FFC6;
      margin: 1rem 2rem 0 2rem;
      padding: 0 2rem;
@@ -446,23 +455,24 @@ h2.searchresults_header{
 .individual_left {
      display: flex;
      flex-direction: column;
-     width: 35%;
+     width: 100%;
 }
 
 .individual_right {
      display: flex;
      flex-direction: column;
-     width: 65%;
+     width: auto;
 }
 
 h1.individual_header {
      color: black;
      font-size: 3.5rem;
-     margin: 1rem 0
+     margin: 1rem 0;
+     text-align: center;
 }
 
 .individual_img {
-     width: 90%;
+     width: auto;
      margin: 0 0 1.5rem 0;  
 }
 
@@ -538,7 +548,7 @@ h1.admin {
 
 .admin_individual {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      background: #F8FFC6;
      border: 3px solid #000000;
      margin: 1rem 2rem 0 2rem;
@@ -548,14 +558,14 @@ h1.admin {
 
 .admin_deletesave {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
 }
 
 .delete_button {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      text-decoration: none;
      text-align: center;
-     width: 40%;
+     width: auto;
 	background-color:#ff7f51;
 	border-radius:28px;
 	cursor:pointer;
@@ -580,7 +590,7 @@ h1.admin {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      text-decoration: none;
      text-align: center;
-     width: 40%;
+     width: auto;
 	background-color:#ff7f51;
 	border-radius:28px;
 	cursor:pointer;
@@ -599,4 +609,6 @@ h1.admin {
 .save_button:active {
 	position:relative;
 	top:1px;
+}
+
 }
