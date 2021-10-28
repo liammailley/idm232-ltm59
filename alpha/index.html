@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
-     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+     <link href="css/desktop.css" rel="stylesheet" type="text/css" media="all">
+     <link href="css/mobiletablet.css" rel="stylesheet" type="text/css" media="all">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
      <header>
           <h1>LIAM'S HOMEMADE GRUB</h1>
           <div class="mainmenu">
-               <h2 class="mainmenu_item">SEE ALL</h2>
-               <h2 class="mainmenu_item">Breakfast</h2>
-               <h2 class="mainmenu_item">Lunch</h2>
-               <h2 class="mainmenu_item">Dinner</h2>
-               <h2 class="mainmenu_item">Dessert</h2>
-               <h2 class="mainmenu_item">Snacks</h2>
+               <a href="index.html" class="mainmenu_item">Home</a>
+               <a href="pages/allrecipes.html" class="mainmenu_item">Breakfast</a>
+               <a href="pages/allrecipes.html" class="mainmenu_item">Lunch</a>
+               <a href="pages/allrecipes.html" class="mainmenu_item">Dinner</a>
+               <a href="pages/allrecipes.html" class="mainmenu_item">Dessert</a>
+               <a href="pages/allrecipes.html" class="mainmenu_item">Snacks</a>
           </div>
      </header>
 
@@ -28,31 +28,57 @@
                <div class="hero_search_container">
                     <div class="hero_search">
                          <input type="text" class="searchTerm" placeholder="Find a recipe...">
-                         <button type="submit" class="searchButton">
+                         <!--<button type="submit" class="searchButton">
                               <i class="fa fa-hero_search">&#128269</i>
-                         </button>
+                         </button>-->
+                         <a href="pages/searchresults.html" class="searchButton">&#128269</a>
                     </div>
                </div>
           </div>
           <div class="mainbody">
                <div class="mainbody_column1">
-                    <h2 class="mainbody_header">RECENT ADDITIONS</h2>
-                    <div class="mainbody_column1_box1">
-                         <h3>Recipe Item</h3>
-                         <!--IMAGE-->
-                         <!--BUTTON-->
+                    <h2 class="mainbody_header"><u>RECENT ADDITIONS</u></h2>
+                    <div class="mainbody_column1_box">
+                         <h3 class="mainbody_column1_header">Recipe Item</h3>
+                         <img class="mainbody_column1_img" src="images/placeholder.jpg">
+                         <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
                     </div>
-                    <div class="mainbody_column1_box2">
-                         <h3>Recipe Item</h3>
-                         <!--IMAGE-->
-                         <!--BUTTON-->
+                    <div class="mainbody_column1_box">
+                         <h3 class="mainbody_column1_header">Recipe Item</h3>
+                         <img class="mainbody_column1_img" src="images/placeholder.jpg">
+                         <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
                     </div>
                </div>
                <div class="mainbody_column2">
-                    <p>pee</p>
+                    <h2 class="mainbody_header"><u>RECIPE OF THE DAY</u></h2>
+                    <div class="mainbody_column2_box">
+                         <h3 class="mainbody_column2_header">Recipe Item</h3>
+                         <img class="mainbody_column1_img" src="images/placeholder.jpg">
+                         <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
+                    </div>
                </div>
                <div class="mainbody_column3">
-                    <p>holdup</p>
+                    <h2 class="mainbody_header"><u>MOST POPULAR</u></h2>
+                    <div class="mainbody_column3_box">
+                         <div class="mainbody_column3_item">
+                              <h3 class="mainbody_column2_header">Recipe Item</h3>
+                              <img class="mainbody_column3_img" src="images/placeholder.jpg">
+                              <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
+                         </div>
+                         <div class="mainbody_column3_item">
+                              <h3 class="mainbody_column2_header">Recipe Item</h3>
+                              <img class="mainbody_column3_img" src="images/placeholder.jpg">
+                              <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
+                         </div>
+                         <div class="mainbody_column3_item">
+                              <h3 class="mainbody_column2_header">Recipe Item</h3>
+                              <img class="mainbody_column3_img" src="images/placeholder.jpg">
+                              <a href="pages/recipedetail.html" class="mainbody_button">See Recipe</a>
+                         </div>
+                    </div>
+                    <a href="pages/allrecipes.html" class="mainbody_button2">See All Recipes</a>
+                    <a href="pages/recipedetail.html" class="mainbody_button2">Random Recipe</a>
+                    <a href="pages/admin_login.html" class="mainbody_button2">Log In</a>
                </div>
           </div>
      </body>

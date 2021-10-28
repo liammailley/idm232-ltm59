@@ -1,0 +1,602 @@
+/*  ------------------- FONTS -------------------  */
+
+h1 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-weight: normal;
+     color: #F3FF99;
+     font-size: 4.5rem;
+     margin: 0.5rem 1rem 0.5rem 2rem;
+}
+h2 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-weight: normal;
+     color: #F3FF99;
+}
+h3 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     color: #FCFFE4;
+}
+p {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;     
+}
+
+/*  ------------------- HEADER STYLING -------------------  */
+
+header {
+     display: flex;
+     position: sticky;
+     width: 100%;
+     justify-content: space-between;
+     background-color: #71AD9B;
+}
+.mainmenu {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     margin: 0 1rem 0 0;
+}
+.mainmenu_item {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-weight: normal;
+     font-size: 1.5rem;
+     text-decoration: none;
+     color: #F3FF99;
+     margin: 0.5rem 1rem 0.5rem 1rem;
+     transition: all .2s ease-in-out;
+}
+
+.mainmenu_item:hover {
+     transform: scale(1.3); 
+}
+
+/*  ------------------- BODY STYLING -------------------  */
+
+
+body {
+     width: 100%;
+}
+
+/*  ------------------- HERO STYLING -------------------  */
+
+.hero {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+h2.hero_text {
+     color: #FF7F51;
+     font-size: 3rem;
+     margin: 2rem 0 1rem 0;
+}
+
+/*
+hr.hero_break {
+     background: #FF7F51;
+}
+*/
+
+.hero_search_container{
+     display: flex;
+     justify-content: center;
+     width: 30%;
+     margin: 0 0 2rem 0;
+}
+
+.hero_search {
+     width: 100%;
+     position: relative;
+     display: flex;
+}
+
+.searchTerm {
+     width: 100%;
+     border: 3px solid #000000;
+     border-right: none;
+     padding: 5px;
+     border-radius: 15px 0 0 15px;
+     outline: none;
+     color: #9DBFAF;
+}
+
+.searchTerm:focus{
+     color: black;
+}
+
+.searchButton {
+     width: 40px;
+     border: 1px solid #000000;
+     background: #FF7F51;
+     text-align: center;
+     border-radius: 0 15px 15px 0;
+     cursor: pointer;
+     font-size: 20px;
+     transition: all .2s ease-in-out;
+}
+
+.searchButton:hover {
+     transform: scale(1.1); 
+}
+
+/*  ------------------- MAIN BODY STYLING -------------------  */
+
+.mainbody {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+     background: #71AD9B;
+}
+
+h2.mainbody_header {
+     color: #FCFFE4;
+     font-size: 2rem;
+     margin: 0.7rem 0 0.2rem 0;
+}
+
+.mainbody_button {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 40%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 0 0 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.mainbody_button:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.9); 
+}
+.mainbody_button:active {
+	position:relative;
+	top:1px;
+}
+.mainbody_button2 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 85%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.5rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 0 0 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.mainbody_button2:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.95); 
+}
+.mainbody_button2:active {
+	position:relative;
+	top:1px;
+}
+
+/* Column 1 */
+
+.mainbody_column1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 20%;
+     background: #71AD9B;
+     border: 4px solid #FCFFE4;
+     margin: 1rem;
+}
+
+.mainbody_column1_box {
+     display: flex;
+     flex-direction: column;
+     width: 11.5rem;
+     margin: 0 0 0.5rem 0;
+}
+
+h3.mainbody_column1_header {
+     margin: 0.7rem 0 0.2rem 0;
+}
+
+/* Column 2 */
+
+.mainbody_column2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 30%;
+     margin: 1rem;
+}
+
+.mainbody_column2_box {
+     display: flex;
+     flex-direction: column;
+     width: 17rem;
+     border: 1px solid #000000;
+     background: #FCFFE4;
+     margin: 1rem;
+     padding: 0.5rem 1rem;
+}
+
+h3.mainbody_column2_header {
+     margin: 0.7rem 0 0.2rem 0;
+     color: #000000;
+}
+
+/* Column 3 */
+
+.mainbody_column3 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     margin: 1rem;
+}
+
+.mainbody_column3_box {
+     display: flex;
+     flex-direction: row;
+     width: 30rem;
+     border: 1px solid #000000;
+     background: #FCFFE4;
+     margin: 1rem;
+     padding: 0.5rem 1rem;
+}
+
+.mainbody_column3_item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 10rem;
+     padding: 0 0.5rem;
+}
+
+.mainbody_column3_img {
+     width: 100%;
+}
+
+/*  ------------------- LOGIN STYLING -------------------  */
+
+h1.login_header {
+     color: #71AD9B;
+     text-align: center;
+     margin: 1rem 0.5rem;
+}
+
+h2.login_subheader {
+     color: #71AD9B;
+     text-align: center;
+     margin: 0 0.5rem 0.5rem 0.5rem;
+     font-size: 3rem;
+}
+
+h2.login_subheader2 {
+     color: #71AD9B;
+     text-align: center;
+     margin: 0 0.5rem 0.5rem 0.5rem;
+     font-size: 2rem;
+}
+
+.login_username_box {
+     width: 30%;
+     border: 3px solid #000000;
+     padding: 5px;
+     height: 21px;
+     border-radius: 5px 0 0 5px;
+     outline: none;
+     color: #000000;
+}
+
+.login_password_box {
+     width: 30%;
+     border: 3px solid #000000;
+     padding: 5px;
+     height: 21px;
+     border-radius: 5px 0 0 5px;
+     outline: none;
+     color: #000000;
+}
+
+.login_button {
+     width: 40px;
+     border: 1px solid #000000;
+     background: #FF7F51;
+     text-align: center;
+     color: #F8FFC6;
+     border-radius: 0 5px 5px 0;
+     cursor: pointer;
+     font-size: 20px;
+     transition: all .2s ease-in-out;
+}
+
+.login_button:hover {
+     transform: scale(1.1); 
+}
+
+.login_username {
+     display: flex;
+     justify-content: center;
+     width: 50%;
+     margin: 2rem 0 2rem 0;
+}
+
+.login_password {
+     display: flex;
+     justify-content: center;
+     width: 50%;
+     margin: 0 0 2rem 0;
+}
+
+.hero_search {
+     width: 100%;
+     position: relative;
+     display: flex;
+}
+
+.login_inputs {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 2rem 0 6rem 0;
+}
+
+/*  ------------------- RECIPE ITEM STYLING -------------------  */
+
+.recipeitem {
+     display: flex;
+     flex-direction: column;
+     width: 15%;
+     border: 1px solid #000000;
+     background: #FCFFE4;
+     margin: 1rem;
+     padding: 0.5rem 1rem;
+}
+
+h3.recipeitem_header {
+     margin: 0.7rem 0 0.2rem 0;
+     color: #000000;
+}
+
+.recipeitem_img {
+     width: 100%;
+}
+
+.recipeitem_button {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 40%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 0 0 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.recipeitem_button:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.9); 
+}
+.recipeitem_button:active {
+	position:relative;
+	top:1px;
+}
+
+/*  ------------------- SEARCH RESULTS STYLING -------------------  */
+
+.searchresults {
+     background: #F8FFC6;
+     margin: 1rem 2rem 0 2rem;
+     padding: 0 2rem;
+}
+
+.searchresults_top {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+}
+
+h2.searchresults_header{
+     font-size: 2.2rem;
+     color: black;
+}
+
+.searchresults_search_container{
+     display: flex;
+     justify-content: center;
+     width: 30%;
+     margin: 0 0 2rem 0;
+}
+
+.searchresults_search {
+     display: flex;
+     align-items: center;
+     width: 30%;
+     display: flex;
+}
+
+.searchresults_row {
+     display: flex;
+}
+
+/*  ------------------- INDIVIDUAL RECIPE PAGE STYLING -------------------  */
+
+.individual {
+     display: flex;
+     flex-direction: row;
+     background: #F8FFC6;
+     margin: 1rem 2rem 0 2rem;
+     padding: 0 2rem;
+}
+
+.individual_left {
+     display: flex;
+     flex-direction: column;
+     width: 35%;
+}
+
+.individual_right {
+     display: flex;
+     flex-direction: column;
+     width: 65%;
+}
+
+h1.individual_header {
+     color: black;
+     font-size: 3.5rem;
+     margin: 1rem 0
+}
+
+.individual_img {
+     width: 90%;
+     margin: 0 0 1.5rem 0;  
+}
+
+.comment_img {
+     width: 3rem;
+     border: 3px solid #000000;
+     border-radius: 10px;
+     margin: 1rem 0;
+     background: #F3FF99;
+}
+
+/*  ------------------- ADMIN STYLING -------------------  */
+
+header.admin {
+     display: flex;
+     background: #F8FFC6;
+     justify-content: space-between;
+     align-items: center;
+}
+
+h1.admin {
+     color: #71AD9B;
+}
+
+.admin_button {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 40%;
+     height: 50%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 2rem 0 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.admin_button:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.9); 
+}
+.admin_button:active {
+	position:relative;
+	top:1px;
+}
+
+.admin_addedit {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.admin_img_container {
+     display: flex;
+     justify-content: flex-end;
+     width: 50%;
+}
+
+.admin_img {
+     width: 2.5rem;
+     padding: 0.2rem 0;
+     transition: all .2s ease-in-out;
+}
+
+.admin_img:hover {
+     transition: 0.4s;
+     transform: rotate(-10deg);
+}
+
+.admin_individual {
+     display: flex;
+     flex-direction: row;
+     background: #F8FFC6;
+     border: 3px solid #000000;
+     margin: 1rem 2rem 0 2rem;
+     padding: 0 2rem;
+}
+
+
+.admin_deletesave {
+     display: flex;
+     flex-direction: row;
+}
+
+.delete_button {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 40%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 2rem 2rem 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.delete_button:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.9); 
+}
+.delete_button:active {
+	position:relative;
+	top:1px;
+}
+
+.save_button {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     text-align: center;
+     width: 40%;
+	background-color:#ff7f51;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 2rem;
+	padding: 0.7rem 0.5rem;
+     margin: 0.5rem 2rem 2rem 0;
+	box-shadow: 1px 1px 1px #1f6b13;
+     transition: all .2s ease-in-out;
+}
+.save_button:hover {
+	background-color:#FF6933;
+     transition: 0.4s;
+     transform: scale(0.9); 
+}
+.save_button:active {
+	position:relative;
+	top:1px;
+}
