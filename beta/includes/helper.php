@@ -7,7 +7,7 @@
  */
 function siteUrl($path = '')
 {
-    $url = 'http://' . $_SERVER['SERVER_NAME'] ;
+    $url = 'https://liammailley.com/idm232/beta' ;
     echo $url . $path;
 }
 
@@ -19,7 +19,7 @@ function siteUrl($path = '')
  */
 function redirectTo($path)
 {
-    header('Location: ' . $path);
+    header('Location: '.$path);
 }
 
 /**

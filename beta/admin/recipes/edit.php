@@ -1,6 +1,6 @@
 <?php
-     $page_title = 'Edit User';
-     include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+     $page_title = 'Edit Recipe';
+     include '../../global/header.php';
 
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
@@ -29,9 +29,10 @@ if (isset($_POST['update'])) {
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
+    
     if ($db_results) {
         // Success
-        redirectTo('/admin/recipes?success=User Updated');
+        redirectTo('admin/recipes?success=User Updated');
     } else {
         // Error
         redirectTo('/admin/recipes/edit.php?id=' . $id . '&error=' . mysqli_error($db_connection));
@@ -57,7 +58,7 @@ if (isset($_POST['update'])) {
 ?>
 <div class="container">
   <h1 class="body">Edit Recipe: <?php echo $recipe['recipe_name']; ?></h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/alert.php'; ?>
+  <?php include '../../components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">Recipe Name</label>

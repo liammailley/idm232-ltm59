@@ -7,7 +7,6 @@ require_once __DIR__ . '/../includes/database.php';
 require_once __DIR__ . '/../includes/helper.php';
 require_once __DIR__ . '/../includes/functions.php';
 
-
 if(isset($page_title)) {
      $page_title = $page_title . ' | IDM 232';
 } else {

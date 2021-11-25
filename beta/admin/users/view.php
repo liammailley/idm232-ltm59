@@ -1,6 +1,6 @@
 <?php
      $page_title = 'Create User';
-     include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+     include '../../global/header.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -31,8 +31,8 @@ if (isset($_GET['id'])) {
     <p>Phone: <?php echo $user['phone_number']; ?>
     </p>
     <p><a class="btn btn-primary"
-            href="/admin/users/edit.php?id=<?php echo $user['id']; ?>">Edit</a>
+            href="https://liammailley.com/idm232/beta/admin/users/edit.php?id=<?php echo $user['id']; ?>">Edit</a>
         <a class="btn btn-secondary"
-            href="/admin/users/delete.php?id=<?php echo $user['id']; ?>">Delete</a>
+            href="https://liammailley.com/idm232/beta/admin/users/delete.php?id=<?php echo $user['id']; ?>">Delete</a>
     </p>
 </div>

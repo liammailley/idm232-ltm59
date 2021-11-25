@@ -1,6 +1,6 @@
 <?php
      $page_title = 'Edit User';
-     include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+     include '../../global/header.php';
 
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
@@ -57,7 +57,7 @@ if (isset($_POST['update'])) {
 ?>
 <div class="container">
   <h1 class="body">Edit User: <?php echo $user['first_name']; ?></h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/alert.php'; ?>
+  <?php include '../../components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>

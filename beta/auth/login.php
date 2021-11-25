@@ -1,7 +1,7 @@
 <?php 
 
 $page_title = 'Login';
-include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+include '../global/header.php';
 
 ?>
 

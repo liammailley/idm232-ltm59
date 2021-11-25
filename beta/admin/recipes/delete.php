@@ -1,6 +1,6 @@
 <?php
     $page_title = 'Delete User';
-    include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+    include '../../global/header.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     if ($db_results) {
         redirectTo('/admin/recipes?success=Recipe was deleted');
     } else {
-        redirectTo('admin/recipes/view.php?id=' . $_GET['id'] . '&error=' . mysqli_error($db_connection));
+        redirectTo('/admin/recipes/view.php?id=' . $_GET['id'] . '&error=' . mysqli_error($db_connection));
     }
 } else {
     // Redirect user if no ID is passed in URL

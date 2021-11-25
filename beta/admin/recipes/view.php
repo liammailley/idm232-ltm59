@@ -1,6 +1,6 @@
 <?php
      $page_title = 'View Recipes';
-     include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+     include '../../global/header.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
 <div class="individual">
         <div class="individual_left">
             <h1 class="individual_header body"><b><?php echo $recipe['recipe_name'];?></b></h1>
-            <img class="individual_img" src="/dist/images/placeholder.jpg">
+            <img class="individual_img" src="https://liammailley.com/idm232/beta/dist/images/placeholder.jpg">
             <!--<img class="comment_img" src="../images/comment.png">-->
         </div>
         <div class="individual_right">
@@ -44,9 +44,9 @@ if (isset($_GET['id'])) {
             </p>
             <div class="container">
                 <p><a class="btn btn-primary"
-                        href="/admin/recipes/edit.php?id=<?php echo $recipe['id']; ?>">Edit</a>
+                        href="https://liammailley.com/idm232/beta/admin/recipes/edit.php?id=<?php echo $recipe['id']; ?>">Edit</a>
                     <a class="btn btn-secondary"
-                        href="/admin/recipes/delete.php?id=<?php echo $recipe['id']; ?>">Delete</a>
+                        href="https://liammailley.com/idm232/beta/admin/recipes/delete.php?id=<?php echo $recipe['id']; ?>">Delete</a>
                 </p>
             </div>
         </div>

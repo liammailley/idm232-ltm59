@@ -1,6 +1,6 @@
 <?php
     $page_title = 'Create User';
-    include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+    include '../../global/header.php';
 
 // Form has been submitted
 if (isset($_POST['submit'])) {
@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 ?>
 <div class="container">
   <h1 class="body">Create User</h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/alert.php'; ?>
+  <?php include '../../components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>

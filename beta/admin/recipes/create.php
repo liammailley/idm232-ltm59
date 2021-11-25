@@ -1,6 +1,6 @@
 <?php
     $page_title = 'Create Recipe';
-    include_once $_SERVER['DOCUMENT_ROOT'] . '../global/header.php';
+    include '../../global/header.php';
 
 // Form has been submitted
 if (isset($_POST['submit'])) {
@@ -18,8 +18,6 @@ if (isset($_POST['submit'])) {
     $query = 'INSERT INTO recipes (user_id, recipe_name, category, prep_time, ingredients, description)';
     $query .= "VALUES ('{$user_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
 
-var_dump($query);
-
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
@@ -33,7 +31,7 @@ var_dump($query);
 ?>
 <div class="container">
   <h1 class="body">Create Recipe</h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/alert.php'; ?>
+  <?php include '../../components/alert.php'; ?>
   <form action="" method="POST" enctype="multipart/form-data">
 
   <label for="">Recipe Name</label>
