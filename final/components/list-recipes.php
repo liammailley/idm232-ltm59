@@ -9,7 +9,7 @@
                         <div class="recipeitem_leftcolumn">
                           <h1 class="recipeitem_header body">' . $row['recipe_name'] . '</h1>
                           <a href="view.php?id=' . $row['id']. '" class="admin_img_container">
-                            <img class="admin_img" src="https://liammailley.com/idm232/final/dist/images/edit.webp">
+
                           </a>
                         </div>
                         <img class="recipeitem_img" src="' . $row['file_id']. '">

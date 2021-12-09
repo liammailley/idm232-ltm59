@@ -4,7 +4,7 @@ include __DIR__ . '/../../global/header.php';
 // Form has been submitted
 if (isset($_POST['submit'])) {
     //  Parse Data
-    $user_id = mysqli_real_escape_string($db_connection, $_POST['user_id']);
+    $file_id = mysqli_real_escape_string($db_connection, $_POST['user_id']);
     $recipe_name = mysqli_real_escape_string($db_connection, $_POST['recipe_name']);
     $category = mysqli_real_escape_string($db_connection, $_POST['category']);
     $prep_time = mysqli_real_escape_string($db_connection, $_POST['prep_time']);
@@ -14,8 +14,8 @@ if (isset($_POST['submit'])) {
     $current_date = getFormattedDateTime();
 
     // Build Query
-    $query = 'INSERT INTO recipes (user_id, recipe_name, category, prep_time, ingredients, description)';
-    $query .= "VALUES ('{$user_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
+    $query = 'INSERT INTO recipes (file_id, recipe_name, category, prep_time, ingredients, description)';
+    $query .= "VALUES ('{$file_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
@@ -60,9 +60,9 @@ if (isset($_POST['submit'])) {
     <input type="text"
       name="description">
 
-  <label for="">Your User ID</label>
-    <input type="text"
-      name="user_id">
+  <label for="">Image</label>
+    <input type="file"
+      name="image">
 
     <!--<label for="">Image</label>
     <input type="file"

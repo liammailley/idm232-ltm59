@@ -34,7 +34,7 @@ if (isset($_GET['keyword'])) {
     <?php
     // Check if the results returned anything
     if ($recipes) {
-        include '../../components/list-recipes.php';
+        include '../../components/list-recipes-admin.php';
     } else {
         echo '<p>There are currently no recipes in the database</p>';
     }

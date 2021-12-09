@@ -14,7 +14,7 @@ if(isset($page_title)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" href="../favicon.ico" type="image/x-icon"/>    
+     <link rel="icon" href="<?php echo $app['url'];?>/dist/images/favicon.ico" type="image/x-icon"/>    
      <link href="<?php echo $app['url'];?>/dist/css/desktop.css" rel="stylesheet" type="text/css" media="all">
      <link href="<?php echo $app['url'];?>/dist/css/mobiletablet.css" rel="stylesheet" type="text/css" media="all">
      <meta charset="UTF-8">

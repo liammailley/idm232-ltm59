@@ -1,6 +1,21 @@
 <?php 
      $page_title = 'Home';
      include 'global/header.php';
+
+     // Build Query
+     $query = 'SELECT * ';
+     $query .= 'FROM recipes';
+
+     $db_results = mysqli_query($db_connection, $query);
+
+     // If Keyword param exist, update query to show search results instead of everything
+     if (isset($_GET['keyword'])) {
+     $keyword = $_GET['keyword'];
+     $recipes = search_recipe_with_keyword($keyword);
+     } else {
+     // Build Query
+     $recipes = get_recipes();
+     }
 ?>
 
 <body>
@@ -13,6 +28,15 @@
                     <input class="searchButton" type="submit" value="Submit">
                </form>
           </div>
+
+          <?php
+          // Check if the results returned anything
+          if ($recipes) {
+               include 'components/list-recipes.php';
+          } else {
+               echo '<p>There are currently no recipes in the database</p>';
+          }
+          ?>
           <!--<div class="mainbody">
                <div class="mainbody_column1">
                     <h2 class="mainbody_header"><u>RECENT ADDITIONS</u></h2>
