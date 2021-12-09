@@ -8,6 +8,8 @@ $query = 'SELECT * ';
 $query .= 'FROM recipes';
 
 $db_results = mysqli_query($db_connection, $query);
+
+
 ?>
 
 <div class="container">
