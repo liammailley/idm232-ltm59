@@ -149,9 +149,9 @@ function update_recipe($recipe_name, $category, $prep_time, $ingredients, $descr
 
       $result = mysqli_query($db_connection, $query);
       if ($result && $result->num_rows > 0) {
-          $results = $result;
+          $db_results = $result;
       } else {
-          $results = null;
+          $db_results = null;
       }
-      return $results;
+      return $db_results;
   }

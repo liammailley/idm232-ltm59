@@ -26,10 +26,9 @@ if (isset($_GET['keyword'])) {
     <?php include '../../components/alert.php'; ?>
 
     <form class="search-form" action="" method="GET">
-        <label for="">Search</label>
-        <input type="text" name="keyword" placeholder="John Doe"
+        <input class="search" type="text" name="keyword" placeholder="Search Recipes..."
             value="<?php echo @$_GET['keyword']; ?>">
-        <input type="submit" value="submit">
+        <input class="btn_search" type="submit" value="Submit">
     </form>
 
     <?php
