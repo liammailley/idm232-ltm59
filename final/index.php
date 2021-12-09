@@ -7,15 +7,11 @@
           <div class="hero">
                <h2 class="hero_text">BROWSE CHEF LIAM'S COOKBOOK</h2>
                <!--<hr class="hero_break">-->
-               <div class="hero_search_container">
-                    <div class="hero_search">
-                         <input type="text" class="searchTerm" placeholder="Find a recipe...">
-                         <!--<button type="submit" class="searchButton">
-                              <i class="fa fa-hero_search">&#128269</i>
-                         </button>-->
-                         <a href="admin/recipes" class="searchButton">&#128269</a>
-                    </div>
-               </div>
+               <form class="search-form" action="" method="GET">
+                    <input class="searchTerm" type="text" name="keyword" placeholder="Search Recipes..."
+                         value="<?php echo @$_GET['keyword']; ?>">
+                    <input class="searchButton" type="submit" value="Submit">
+               </form>
           </div>
           <!--<div class="mainbody">
                <div class="mainbody_column1">

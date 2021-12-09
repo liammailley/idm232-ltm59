@@ -12,7 +12,7 @@
                             <img class="admin_img" src="https://liammailley.com/idm232/final/dist/images/edit.webp">
                           </a>
                         </div>
-                        <img class="recipeitem_img" src="https://liammailley.com/idm232/final/dist/images/placeholder.jpg">
+                        <img class="recipeitem_img" src="' . $row['file_id']. '">
                     </div>
                 </div>
               </div>

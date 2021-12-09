@@ -27,9 +27,8 @@ if(isset($page_title)) {
           <h1>LIAM'S HOMEMADE GRUB</h1>
           <div class="mainmenu">
                <a href="<?php echo $app['url'];?>" class="mainmenu_item">Home</a>
-               <a href="<?php echo $app['url'];?>/admin/recipes/create.php" class="mainmenu_item">New Recipe</a>
-               <a href="<?php echo $app['url'];?>/admin/recipes" class="mainmenu_item">All Recipes</a>
-               <a href="<?php echo $app['url'];?>/admin/users" class="mainmenu_item">Users</a>
+               <a href="<?php echo $app['url'];?>/admin/recipes" class="mainmenu_item">View All Recipes</a>
+               <a href="<?php echo $app['url'];?>/admin/" class="mainmenu_item">Admin</a>
           </div>
      </header>
 <body>

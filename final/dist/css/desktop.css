@@ -112,13 +112,15 @@ hr.hero_break {
 }
 
 .searchButton {
-     width: 40px;
+     min-width: auto;
      border: 1px solid #000000;
      background: #FF7F51;
      text-align: center;
      border-radius: 0 15px 15px 0;
      cursor: pointer;
      font-size: 20px;
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     color: white;
      transition: all .2s ease-in-out;
 }
 

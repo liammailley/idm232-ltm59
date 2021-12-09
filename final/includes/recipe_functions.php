@@ -9,14 +9,14 @@
  * @param string $phone
  * @return bool
  */
-function create_recipes($recipe_name, $category, $prep_time, $ingredients, $description)
+function create_recipes($file_id, $recipe_name, $category, $prep_time, $ingredients, $description)
 {
     global $db_connection;
 
     $current_date_time = getFormattedDateTime();
     // Build Query
-    $query = 'INSERT INTO recipes (recipe_name, category, prep_time, ingredients, description)';
-    $query .= "VALUES ('{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
+    $query = 'INSERT INTO recipes (file_id, recipe_name, category, prep_time, ingredients, description)';
+    $query .= "VALUES ('{$file_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
 
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
@@ -39,18 +39,19 @@ function create_recipes($recipe_name, $category, $prep_time, $ingredients, $desc
  * @param string $user_id
  * @return void
  */
-function update_recipe($recipe_name, $category, $prep_time, $ingredients, $description, $user_id)
+function update_recipe($recipe_name, $category, $prep_time, $ingredients, $description, $file_id)
 {
     global $db_connection;
     // Build Query
     $query = 'UPDATE customers ';
     $query .= 'SET ';
+    $query .= "file_id = '{$file_id}', ";
     $query .= "recipe_name = '{$recipe_name}', ";
     $query .= "category = '{$category}', ";
     $query .= "prep_time = '{$prep_time}', ";
     $query .= "ingredients = '{$ingredients}', ";
     $query .= "description = '{$description}' ";
-    $query .= "WHERE id = {$user_id}";
+    //$query .= "WHERE id = {$file_id}";
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
