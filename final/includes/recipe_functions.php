@@ -145,7 +145,8 @@ function update_recipe($recipe_name, $category, $intro, $ingredients, $descripti
       $query .= ' WHERE ';
       $query .= "recipe_name LIKE '%" . $keyword . "%'";
       $query .= "OR category LIKE '%" . $keyword . "%' ";
-      $query .= "OR ingredients LIKE '%" . $keyword . "%' ";
+      $query .= "OR category LIKE '%" . $keyword . "%' ";
+      $query .= "OR intro LIKE '%" . $keyword . "%' ";
       $query .= "OR description LIKE '%" . $keyword . "%'";
 
       $result = mysqli_query($db_connection, $query);

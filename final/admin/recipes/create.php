@@ -40,7 +40,6 @@ if (isset($_POST['submit'])) {
     // Build Query
     $query = 'INSERT INTO recipes (recipe_name, category, intro, ingredients, description, filename)';
     $query .= "VALUES ('{$recipe_name}', '{$category}', '{$intro}', '{$ingredients}', '{$description}', '{$filename}')";
-    var_dump($query);
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
@@ -72,18 +71,18 @@ if (isset($_POST['submit'])) {
     </select>
 
   <label for="">Intro</label>
-    <input type="textarea"
-      name="intro" id="mytextarea">
+  <textarea type="textarea"
+      name="intro" id="mytextarea"></textarea>
 
 
   <label for="">Ingredients</label>
-    <input type="text"
-      name="ingredients" id="mytextarea">
+    <textarea type="textarea"
+      name="ingredients" id="mytextarea"></textarea>
 
 
   <label for="">Description</label>
-    <input type="text"
-      name="description" id="mytextarea">
+    <textarea type="textarea"
+      name="description" id="mytextarea"></textarea>
 
   <label for="">Image</label>
     <input type="file"
