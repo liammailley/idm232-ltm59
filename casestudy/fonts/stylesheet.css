@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-Light.woff2') format('woff2'),
+        url('Chai-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-Light.woff2') format('woff2'),
+        url('Chai-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-Bold.woff2') format('woff2'),
+        url('Chai-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-Medium.woff2') format('woff2'),
+        url('Chai-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-SemiBold.woff2') format('woff2'),
+        url('Chai-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chai';
+    src: url('Chai-Regular.woff2') format('woff2'),
+        url('Chai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park';
+    src: url('NationalPark-Thin.woff2') format('woff2'),
+        url('NationalPark-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park';
+    src: url('NationalPark-Heavy.woff2') format('woff2'),
+        url('NationalPark-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park Outline';
+    src: url('NationalPark-Outline.woff2') format('woff2'),
+        url('NationalPark-Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park R';
+    src: url('NationalPark-Regular.woff2') format('woff2'),
+        url('NationalPark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NCS Radhiumz';
+    src: url('NCSRadhiumzRegular.woff2') format('woff2'),
+        url('NCSRadhiumzRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sentrix Space';
+    src: url('SentrixSpace-Regular.woff2') format('woff2'),
+        url('SentrixSpace-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sentrix';
+    src: url('Sentrix-Regular.woff2') format('woff2'),
+        url('Sentrix-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

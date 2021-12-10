@@ -1,0 +1,84 @@
+
+/* General Styling */
+
+body {
+     margin: 0;
+     background-color: #F8FFC6;
+}
+p {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;
+     margin: 2rem 1rem;
+}
+a {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 4rem;
+     margin: 2rem 1rem;
+}
+a.betalink {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;
+     margin: 2rem 1rem;
+}
+h1 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 4rem;
+     margin: 2rem 1rem;
+}
+h2 {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     color: #71AD9B;
+     font-size: 3rem;
+     margin: 2rem 1rem;
+}
+
+ /* Header, Main, Etc. */
+
+header {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     background-color: #eb5e55;
+     position: sticky;
+     max-width: 100%;
+     overflow: auto;
+     margin: auto;
+     padding: 0.2rem 0;
+     z-index: 2;
+     margin-bottom: 1rem;
+ }
+ 
+ main {
+     background-color: #fdf0d5;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ h1.bigbold {
+     display: flex;
+     justify-content: center;
+     letter-spacing: 0.2rem;
+     font-size: 2rem;
+     font-weight: bold;
+     color: #000000;
+     text-align: center;
+     max-width: 100%;
+     text-shadow: -5px 5px #68E1E2;
+ }
+
+h2.name {
+     display: flex;
+     justify-content: center;
+     color: #000000;
+}
+
+.big {
+     font-family: 'NCS Radhiumz', 'Chai', Georgia, "Times New Roman", Times, serif;
+     margin: 1rem 2rem;
+}
+
+.small {
+     font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+     margin: 1rem 2rem;
+}

@@ -11,7 +11,7 @@ if (isset($_POST['update'])) {
     //  Parse Data
     $recipe_name = mysqli_real_escape_string($db_connection, $_POST['recipe_name']);
     $category = mysqli_real_escape_string($db_connection, $_POST['category']);
-    $prep_time = mysqli_real_escape_string($db_connection, $_POST['prep_time']);
+    $intro = mysqli_real_escape_string($db_connection, $_POST['intro']);
     $ingredients = mysqli_real_escape_string($db_connection, $_POST['ingredients']);
     $description = mysqli_real_escape_string($db_connection, $_POST['description']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
@@ -22,7 +22,7 @@ if (isset($_POST['update'])) {
     $query .= 'SET ';
     $query .= "recipe_name = '{$recipe_name}', ";
     $query .= "category = '{$category}', ";
-    $query .= "prep_time = '{$prep_time}', ";
+    $query .= "intro = '{$intro}', ";
     $query .= "ingredients = '{$ingredients}', ";
     $query .= "description = '{$description}' ";
     $query .= " WHERE id = {$id}";
@@ -77,8 +77,8 @@ if (isset($_POST['update'])) {
 
     <label for="">Prep Time</label>
     <input type="text"
-      value="<?php echo $recipe['prep_time']; ?>"
-      name="prep_time">
+      value="<?php echo $recipe['intro']; ?>"
+      name="intro">
 
 
     <label for="">Ingredients</label>

@@ -34,12 +34,13 @@ if (isset($_GET['id'])) {
             <div class="individual_right_upper">
                 <h2 class="body"><b>Category</b></h2>
                 <p class="body"><?php echo $recipe['category'];?></p>
-                <h2 class="body"><b>Prep Time</b></h2>
-                <p class="body"><?php echo $recipe['prep_time'];?></p>
+                <h2 class="body"><b>Intro</b></h2>
+                <p class="body"><?php echo $recipe['intro'];?></p>
                 <h2 class="body"><b>Ingredients</b></h2>
                 <p class="body"><?php echo $recipe['ingredients'];?></p>
             </div>
             <p class="individual_upperdesc">
+                <h2 class="body"><b>Recipe</b></h2>
                 <?php echo $recipe['description'];?>
             </p>
             <div class="container">

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
+     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>IDM 232 - Case Study</title>
+</head>
+<style>
+     @media only screen and (max-width: 900px) {
+          h1 {
+               font-size: 3rem;
+          }
+          h2 {
+               font-size: 2rem;
+          }
+          p {
+               font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+               font-size: 1.2rem;
+               margin: 2rem 1rem;
+          }
+          a {
+               font-family: 'NCS Radhiumz', Georgia, "Times New Roman", Times, serif;
+               font-size: 2rem;
+               margin: 2rem 1rem;
+          }
+          .gif {
+               width: 20rem;
+          }
+     }
+</style>
+
+
+<body>
+     <header>
+          <img class="image" src="images/hero.png">
+     </header>
+
+     <h1>OVERVIEW</h1>
+     <p>
+          This class focused around database connections, PHP, and MySql. The purpose of this final project was to demonstrate
+          understanding of PHP through the construction of a recipe site.
+          <br>Users can view a collection of recipes, and can search for specific ones by using a search bar. An Admin section
+          is also included, where one can edit individual recipes, create new recipes, and delete recipes. Finally, a section that
+          allows for sorting by category is included. 
+     </p>
+     <h1>CONTEXT AND CHALLENGE</h1>
+     <h2>BACKGROUND</h2>
+     <p>
+          Before I could begin using this new language to build this site, I needed to figure out how to display these recipes.
+          <br>I eventually settled on a soft color palatte and a choice to brand the site with my own name.
+     </p>
+     <a href="https://liammailley.com/idm241/beta/build/" class="betalink">You can check out my beta here.</a>
+     <p>
+          By my beta, however, I had decided that I wanted to focus on something I could rework into my portfolio site, as I hadn't updated it in a while.
+     </p>
+     <h2>THE PROBLEM</h2>
+     <p>
+          My portfolio's way of displaying my work was clunky. It consisted of 4 different buttons for 4 different categories, each of which opened into a seperate page that displayed the projects for that category.
+          It was functional, but not intuitive. Forcing the user to jump from page to page gets overwhelming. Additionally, I wanted my portfolio to reflect my level of comfortability with HTML, CSS, and Javascript.
+     </p>
+     <h2>GOALS AND OBJECTIVES</h2>
+     <p>
+          My goal was simple: find a way to condense all of the page-jumping content of my portfolio into a single group of microinteractions on a single page.
+     </p>
+     <h1>PROCESS AND INSIGHT</h1>
+     <p>
+          When I brought this idea up to my teacher, he suggested creating a variation on an image gallery. Looking through CodePen,
+          I was able to find a very smooth example to base my code off of.
+     </p>
+     <div class="image_box">
+          <img class="gif" src="images/example2.gif">
+     </div>
+     <p>
+          From there, I began creating special hover states that allowed for text to appear overtop of the image when it was hovered.
+          I wanted this bit to feel seamless, so I paid special care to the animation times in order for it to all feel like one smooth animation.
+          <br><br>
+          Next, I created 5 modals. Each would only be visible when its category had been selected from the gallery.
+          I transferred the content from my portfolio, and was finally able to access all of my work from one microinteraction group. 
+     </p>
+     <h1>THE SOLUTION</h1>
+     <div class="toplink_box">
+          <a href="https://liammailley.com/idm241/final/build" class="toplink">Try it here!</a>
+     </div>
+     <h1>THE RESULTS</h1>
+          <p>
+          The completed final achieves all of my goals for this project. Each microinteraction plays into the next, creating a sense of motion throughout the whole product.
+          I'm excited to implement this into my portfolio and I think it will improve both the navigation of my site and its sense of style.
+     </p>
+</body>
+</html>

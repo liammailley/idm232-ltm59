@@ -21,13 +21,25 @@ if(isset($page_title)) {
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title><?php echo $page_title;?></title>
+     <script src="https://cdn.tiny.cloud/1/wdm8q2l8smvt9ds82bijhu6cfdzzhhr4otlvqmrwsmytgndc/tinymce/5/tinymce.min.js" 
+     referrerpolicy="origin"></script>
+     <script>
+     tinymce.init({
+          selector: 'textarea',
+          plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+          toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+          toolbar_mode: 'floating',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+     });
+     </script>
 </head>
 <body style="background-color: #F8FFC6;">
      <header>
           <h1>LIAM'S HOMEMADE GRUB</h1>
           <div class="mainmenu">
                <a href="<?php echo $app['url'];?>" class="mainmenu_item">Home</a>
-               <a href="<?php echo $app['url'];?>/admin/recipes" class="mainmenu_item">View All Recipes</a>
+               <a href="<?php echo $app['url'];?>/categories/" class="mainmenu_item">Categories</a>
                <a href="<?php echo $app['url'];?>/admin/" class="mainmenu_item">Admin</a>
           </div>
      </header>

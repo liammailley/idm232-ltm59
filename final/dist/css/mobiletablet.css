@@ -24,6 +24,11 @@ p {
      font-size: 1.5rem;     
 }
 
+li {
+     font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;     
+}
+
 /*  ------------------- HEADER STYLING -------------------  */
 
 header {

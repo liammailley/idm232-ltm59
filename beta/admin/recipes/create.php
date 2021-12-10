@@ -7,15 +7,15 @@ if (isset($_POST['submit'])) {
     $user_id = mysqli_real_escape_string($db_connection, $_POST['user_id']);
     $recipe_name = mysqli_real_escape_string($db_connection, $_POST['recipe_name']);
     $category = mysqli_real_escape_string($db_connection, $_POST['category']);
-    $prep_time = mysqli_real_escape_string($db_connection, $_POST['prep_time']);
+    $intro = mysqli_real_escape_string($db_connection, $_POST['intro']);
     $ingredients = mysqli_real_escape_string($db_connection, $_POST['ingredients']);
     $description = mysqli_real_escape_string($db_connection, $_POST['description']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $current_date = getFormattedDateTime();
 
     // Build Query
-    $query = 'INSERT INTO recipes (user_id, recipe_name, category, prep_time, ingredients, description)';
-    $query .= "VALUES ('{$user_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
+    $query = 'INSERT INTO recipes (user_id, recipe_name, category, intro, ingredients, description)';
+    $query .= "VALUES ('{$user_id}', '{$recipe_name}', '{$category}', '{$intro}', '{$ingredients}', '{$description}')";
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 
   <label for="">Prep Time</label>
     <input type="text"
-      name="prep_time">
+      name="intro">
 
 
   <label for="">Ingredients</label>

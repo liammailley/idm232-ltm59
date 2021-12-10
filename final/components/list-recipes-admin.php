@@ -1,7 +1,7 @@
 <table>
     <tbody>
         <?php
-          while ($row = mysqli_fetch_assoc($db_results)) {
+          while ($row = mysqli_fetch_assoc($recipes)) {
 
               echo '<tr>';
               echo '<td>' . $row['id'] . '</td>';

@@ -9,14 +9,14 @@
  * @param string $phone
  * @return bool
  */
-function create_recipes($file_id, $recipe_name, $category, $prep_time, $ingredients, $description)
+function create_recipes($file_id, $recipe_name, $category, $intro, $ingredients, $description)
 {
     global $db_connection;
 
     $current_date_time = getFormattedDateTime();
     // Build Query
-    $query = 'INSERT INTO recipes (file_id, recipe_name, category, prep_time, ingredients, description)';
-    $query .= "VALUES ('{$file_id}', '{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}')";
+    $query = 'INSERT INTO recipes (file_id, recipe_name, category, intro, ingredients, description)';
+    $query .= "VALUES ('{$file_id}', '{$recipe_name}', '{$category}', '{$intro}', '{$ingredients}', '{$description}')";
 
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
@@ -39,7 +39,7 @@ function create_recipes($file_id, $recipe_name, $category, $prep_time, $ingredie
  * @param string $user_id
  * @return void
  */
-function update_recipe($recipe_name, $category, $prep_time, $ingredients, $description, $file_id)
+function update_recipe($recipe_name, $category, $intro, $ingredients, $description, $file_id)
 {
     global $db_connection;
     // Build Query
@@ -48,7 +48,7 @@ function update_recipe($recipe_name, $category, $prep_time, $ingredients, $descr
     $query .= "file_id = '{$file_id}', ";
     $query .= "recipe_name = '{$recipe_name}', ";
     $query .= "category = '{$category}', ";
-    $query .= "prep_time = '{$prep_time}', ";
+    $query .= "intro = '{$intro}', ";
     $query .= "ingredients = '{$ingredients}', ";
     $query .= "description = '{$description}' ";
     //$query .= "WHERE id = {$file_id}";

@@ -3,10 +3,33 @@ $page_title = 'Create Recipe';
 include __DIR__ . '/../../global/header.php';
 // Form has been submitted
 if (isset($_POST['submit'])) {
+    // Parse Data
+    $files_array = explode('.', $_FILES['filename']['name']);
+    $file_title = slugify($files_array[0]);
+    $extension = end($files_array);
+    $final_file_name = $file_title . '.' . $extension;
+    $temp_name = $_FILES['filename']['tmp_name'];
+
+    // dist/uploads/image-name.png
+    $file_path = $app['asset_url'] . $final_file_name;
+
+    // idm232/public_html/admin/services/../../dist/uploads/image-name.png
+    // Which is the same as idm232/public_html/admin/services/dist/uploads/image-name.png
+    $file_destination = __DIR__ . '/../..' . $file_path;
+    $current_date = getFormattedDateTime();
+
+    //if (move_uploaded_file($temp_name, $file_destination)) {
+    //// File was uploaded successfully
+    //      echo 'It worked';
+    //  } else {
+    //      redirectTo('/admin/services/create.php?error=Could not find image in database');
+    //  }
+        
+
     //  Parse Data
     $recipe_name = mysqli_real_escape_string($db_connection, $_POST['recipe_name']);
     $category = mysqli_real_escape_string($db_connection, $_POST['category']);
-    $prep_time = mysqli_real_escape_string($db_connection, $_POST['prep_time']);
+    $intro = mysqli_real_escape_string($db_connection, $_POST['intro']);
     $ingredients = mysqli_real_escape_string($db_connection, $_POST['ingredients']);
     $description = mysqli_real_escape_string($db_connection, $_POST['description']);
     $file_id = mysqli_real_escape_string($db_connection, $_POST['file_id']);
@@ -15,8 +38,8 @@ if (isset($_POST['submit'])) {
     $current_date = getFormattedDateTime();
 
     // Build Query
-    $query = 'INSERT INTO recipes (recipe_name, category, prep_time, ingredients, description, filename)';
-    $query .= "VALUES ('{$recipe_name}', '{$category}', '{$prep_time}', '{$ingredients}', '{$description}', '{$filename}')";
+    $query = 'INSERT INTO recipes (recipe_name, category, intro, ingredients, description, filename)';
+    $query .= "VALUES ('{$recipe_name}', '{$category}', '{$intro}', '{$ingredients}', '{$description}', '{$filename}')";
     var_dump($query);
 
     // Execute Query
@@ -48,19 +71,19 @@ if (isset($_POST['submit'])) {
       <option value="snacks">Snacks</option>
     </select>
 
-  <label for="">Prep Time</label>
-    <input type="text"
-      name="prep_time">
+  <label for="">Intro</label>
+    <input type="textarea"
+      name="intro" id="mytextarea">
 
 
   <label for="">Ingredients</label>
     <input type="text"
-      name="ingredients">
+      name="ingredients" id="mytextarea">
 
 
   <label for="">Description</label>
     <input type="text"
-      name="description">
+      name="description" id="mytextarea">
 
   <label for="">Image</label>
     <input type="file"

@@ -21,8 +21,6 @@ if (isset($_POST['submit'])) {
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
         // Success
-        echo "testing";
-        die;
         redirectTo('/admin/users/');
     } else {
         // Error
