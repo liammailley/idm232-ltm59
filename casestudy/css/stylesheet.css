@@ -8,7 +8,7 @@ body {
 p {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      font-size: 1.5rem;
-     margin: 2rem 1rem;
+     margin: 2rem 3rem;
 }
 a {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
@@ -23,13 +23,13 @@ a.betalink {
 h1 {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      font-size: 4rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 h2 {
      font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
      color: #71AD9B;
      font-size: 3rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 
  /* Header, Main, Etc. */

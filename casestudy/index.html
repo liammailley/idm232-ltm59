@@ -18,17 +18,18 @@
                font-size: 2rem;
           }
           p {
-               font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+               font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
                font-size: 1.2rem;
                margin: 2rem 1rem;
           }
           a {
-               font-family: 'NCS Radhiumz', Georgia, "Times New Roman", Times, serif;
+               font-family: 'Tw Cen MT Condensed', Arial, Helvetica, sans-serif;
                font-size: 2rem;
                margin: 2rem 1rem;
           }
           .gif {
                width: 20rem;
+               margin-left: 1rem;
           }
      }
 </style>
@@ -36,7 +37,7 @@
 
 <body>
      <header>
-          <img class="image" src="images/hero.png">
+          <img class="image" src="images/hero.jpg">
      </header>
 
      <h1>OVERVIEW</h1>
@@ -48,47 +49,54 @@
           allows for sorting by category is included. 
      </p>
      <h1>CONTEXT AND CHALLENGE</h1>
-     <h2>BACKGROUND</h2>
-     <p>
-          Before I could begin using this new language to build this site, I needed to figure out how to display these recipes.
-          <br>I eventually settled on a soft color palatte and a choice to brand the site with my own name.
-     </p>
-     <a href="https://liammailley.com/idm241/beta/build/" class="betalink">You can check out my beta here.</a>
-     <p>
-          By my beta, however, I had decided that I wanted to focus on something I could rework into my portfolio site, as I hadn't updated it in a while.
-     </p>
      <h2>THE PROBLEM</h2>
      <p>
-          My portfolio's way of displaying my work was clunky. It consisted of 4 different buttons for 4 different categories, each of which opened into a seperate page that displayed the projects for that category.
-          It was functional, but not intuitive. Forcing the user to jump from page to page gets overwhelming. Additionally, I wanted my portfolio to reflect my level of comfortability with HTML, CSS, and Javascript.
+          We were given a large amount of complete recipes. These recipes needed to be placed onto a database, then accessed by
+          a PHP-powered site that would allow users to view them, and admin users to edit, delete, or add more of them.
      </p>
      <h2>GOALS AND OBJECTIVES</h2>
      <p>
-          My goal was simple: find a way to condense all of the page-jumping content of my portfolio into a single group of microinteractions on a single page.
+          My goal was to create a fully functioning recipe site that could properly display, update, delete, and add to a database of recipes.
      </p>
      <h1>PROCESS AND INSIGHT</h1>
      <p>
-          When I brought this idea up to my teacher, he suggested creating a variation on an image gallery. Looking through CodePen,
-          I was able to find a very smooth example to base my code off of.
+          Initially, this task was very daunting for one main reason - I had never worked with PHP before!
+          <br><br>
+          Moreover, I had never worked on any web development task that was not strictly client-side. Getting my files to communicate with
+          a database was something I had never attempted in my time here at Drexel, and it would prove to be the biggest hurdle to cross.
+          I spent most of my time trying to familiarize myself with phpMyAdmin, a program used for updating and creating database tables.
      </p>
      <div class="image_box">
-          <img class="gif" src="images/example2.gif">
+          <img class="gif" src="images/phpmyadmin.png">
      </div>
      <p>
-          From there, I began creating special hover states that allowed for text to appear overtop of the image when it was hovered.
-          I wanted this bit to feel seamless, so I paid special care to the animation times in order for it to all feel like one smooth animation.
+          I soon began to understand the ways PHP could communicate with and update databases. To test my abilities, I created a table
+          for all "users" of the site.
+     </p>
+          <div class="image_box">
+               <img class="gif" src="images/users.png">
+          </div>
+     <p>
+          <br>
+          From here, I replicated the basic ideas of this user table and modified them to reprent each recipe. I also created a "recipes"
+          database table. Once this was functioning, I was able to create a more rigid structure for the site.
           <br><br>
-          Next, I created 5 modals. Each would only be visible when its category had been selected from the gallery.
-          I transferred the content from my portfolio, and was finally able to access all of my work from one microinteraction group. 
+          My next step was to implement a search bar, and to allow this search field to look through most aspects of the database
+          to find as many matches as possible. Finally, I implemented a standardized placeholder image for all recipes.
      </p>
      <h1>THE SOLUTION</h1>
      <div class="toplink_box">
-          <a href="https://liammailley.com/idm241/final/build" class="toplink">Try it here!</a>
+          <a href="https://liammailley.com/idm232/final/" class="toplink">Try it here!</a>
      </div>
      <h1>THE RESULTS</h1>
           <p>
-          The completed final achieves all of my goals for this project. Each microinteraction plays into the next, creating a sense of motion throughout the whole product.
-          I'm excited to implement this into my portfolio and I think it will improve both the navigation of my site and its sense of style.
+          After a long and difficult few weeks, I have accomplished the goal of creating a site to host 40 different recipes from a database.
+          All can be edited, deleted, or new entries can be added from the "Admin" tab on the navigation bar. In addition, a "Categories" tab 
+          is available, which allows users to only see recipes of a certain category (be it breakfast, lunch, dinner, dessert, or snacks.)
+          <br><br>
+          I'm very proud of the finished product. This was a challenging assignment in more ways than one, but seeing it come together has
+          been amazing. I hope to use my experience from this project to create more complex and more interactive interfaces than
+          ever before!
      </p>
 </body>
 </html>
