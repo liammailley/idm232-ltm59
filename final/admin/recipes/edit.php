@@ -76,21 +76,17 @@ if (isset($_POST['update'])) {
     </select>
 
     <label for="">Intro</label>
-    <input type="text" id="mytextarea"
-      value="<?php echo $recipe['intro']; ?>"
-      name="intro">
-
+    <textarea type="text" id="mytextarea"
+      name="intro"><?php echo $recipe['intro']; ?></textarea>
 
     <label for="">Ingredients</label>
-    <input type="text" id="mytextarea"
-      value="<?php echo $recipe['ingredients']; ?>"
-      name="ingredients">
+    <textarea type="text" id="mytextarea"
+    name="ingredients"><?php echo $recipe['ingredients']; ?></textarea>
 
 
     <label for="">Description</label>
-    <input type="text" id="mytextarea"
-      value="<?php echo $recipe['description']; ?>"
-      name="description">
+    <textarea type="text" id="mytextarea"
+    name="description"><?php echo $recipe['description']; ?></textarea>
 
     <input type="hidden"
       value="<?php echo $recipe['id']; ?>"
