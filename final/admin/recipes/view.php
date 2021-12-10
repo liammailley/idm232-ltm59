@@ -31,6 +31,13 @@ if (isset($_GET['id'])) {
             <!--<img class="comment_img" src="../images/comment.png">-->
         </div>
         <div class="individual_right">
+        <div class="container">
+                <p><a class="btn btn-primary"
+                        href="https://liammailley.com/idm232/final/admin/recipes/edit.php?id=<?php echo $recipe['id']; ?>">Edit</a>
+                    <a class="btn btn-secondary"
+                        href="https://liammailley.com/idm232/final/admin/recipes/delete.php?id=<?php echo $recipe['id']; ?>">Delete</a>
+                </p>
+            </div>
             <div class="individual_right_upper">
                 <h2 class="body"><b>Category</b></h2>
                 <p class="body"><?php echo $recipe['category'];?></p>
@@ -43,12 +50,5 @@ if (isset($_GET['id'])) {
                 <h2 class="body"><b>Recipe</b></h2>
                 <?php echo $recipe['description'];?>
             </p>
-            <div class="container">
-                <p><a class="btn btn-primary"
-                        href="https://liammailley.com/idm232/final/admin/recipes/edit.php?id=<?php echo $recipe['id']; ?>">Edit</a>
-                    <a class="btn btn-secondary"
-                        href="https://liammailley.com/idm232/final/admin/recipes/delete.php?id=<?php echo $recipe['id']; ?>">Delete</a>
-                </p>
-            </div>
         </div>
 </div>
